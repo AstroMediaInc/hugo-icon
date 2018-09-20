@@ -18,13 +18,13 @@ body.fh5co-overflow {
 }
 
 a {
-  color: #69c2c8;
+  color: #d02541;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
 a:hover, a:focus, a:active {
-  color: #3da1a7;
+  color: #d02541;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -65,21 +65,21 @@ p {
 }
 
 .btn-primary {
-  background: #69c2c8;
+  background: #d02541;
   color: #fff;
-  border: 2px solid #69c2c8;
+  border: 2px solid #d02541;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background: #56bac1 !important;
-  border-color: #56bac1 !important;
+  background: #d02541 !important;
+  border-color: #d02541 !important;
 }
 .btn-primary.btn-outline {
   background: transparent;
-  color: #69c2c8;
-  border: 2px solid #69c2c8;
+  color: #d02541;
+  border: 2px solid #d02541;
 }
 .btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
-  background: #69c2c8;
+  background: #d02541;
   color: #fff;
 }
 
@@ -89,13 +89,13 @@ p {
   border: 2px solid #58ca7e;
 }
 .btn-success:hover, .btn-success:focus, .btn-success:active {
-  background: #45c46f !important;
-  border-color: #45c46f !important;
+  background: #d02541 !important;
+  border-color: #d02541 !important;
 }
 .btn-success.btn-outline {
   background: transparent;
-  color: #58ca7e;
-  border: 2px solid #58ca7e;
+  color: #d02541;
+  border: 2px solid #d02541;
 }
 .btn-success.btn-outline:hover, .btn-success.btn-outline:focus, .btn-success.btn-outline:active {
   background: #58ca7e;
@@ -108,8 +108,8 @@ p {
   border: 2px solid #1784fb;
 }
 .btn-info:hover, .btn-info:focus, .btn-info:active {
-  background: #0477f4 !important;
-  border-color: #0477f4 !important;
+  background: #d02541 !important;
+  border-color: #d02541 !important;
 }
 .btn-info.btn-outline {
   background: transparent;
@@ -141,21 +141,21 @@ p {
 }
 
 .btn-danger {
-  background: #fb4f59;
+  background: #ce233f;
   color: #fff;
-  border: 2px solid #fb4f59;
+  border: 2px solid #ce233f;
 }
 .btn-danger:hover, .btn-danger:focus, .btn-danger:active {
-  background: #fa3641 !important;
-  border-color: #fa3641 !important;
+  background: #d02541 !important;
+  border-color: #d02541 !important;
 }
 .btn-danger.btn-outline {
   background: transparent;
-  color: #fb4f59;
-  border: 2px solid #fb4f59;
+  color: #d02541;;
+  border: 2px solid #d02541;
 }
 .btn-danger.btn-outline:hover, .btn-danger.btn-outline:focus, .btn-danger.btn-outline:active {
-  background: #fb4f59;
+  background: #d02541;
   color: #fff;
 }
 
@@ -184,7 +184,7 @@ p {
 .form-control:active, .form-control:focus {
   outline: none;
   box-shadow: none;
-  border-color: #69c2c8;
+  border-color: #d02541;
 }
 
 .fh5co-page {
@@ -238,7 +238,7 @@ p {
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 #fh5co-home .fh5co-copy-inner a:hover {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.9);
+  border-bottom: 1px solid #d02541;
   text-decoration: none;
 }
 
@@ -469,8 +469,8 @@ p {
   outline: none;
 }
 .fh5co-tabs-container .fh5co-tabs li.active a {
-  color: #69c2c8;
-  border-bottom: 1px solid #69c2c8;
+  color: #d02541;
+  border-bottom: 1px solid #d02541;
 }
 @media screen and (max-width: 480px) {
   .fh5co-tabs-container .fh5co-tabs li {
@@ -534,6 +534,7 @@ p {
 }
 .gototop a:hover, .gototop a:active, .gototop a:focus {
   text-decoration: none;
+
   outline: none;
 }
 
@@ -587,7 +588,7 @@ p {
   line-height: 40px;
 }
 #fh5co-services .fh5co-video a:hover {
-  background: #57D131;
+  background: #d02541;
 }
 #fh5co-services .fh5co-video a:hover, #fh5co-services .fh5co-video a:focus, #fh5co-services .fh5co-video a:active {
   text-decoration: none;
@@ -631,7 +632,7 @@ p {
   color: #368f95;
 }
 #fh5co-services .service:hover, #fh5co-services .service:focus {
-  border: 1px solid #e6e6e6;
+  border: 1px solid #d02541;
   -webkit-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.09);
   -moz-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.09);
   -ms-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.09);
@@ -893,7 +894,7 @@ p {
   border-radius: 0;
 }
 #fh5co-contact .form-control:active, #fh5co-contact .form-control:focus {
-  border-bottom: 1px solid #69c2c8;
+  border-bottom: 1px solid #d02541;
 }
 
 #fh5co-footer {

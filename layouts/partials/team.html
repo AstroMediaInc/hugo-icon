@@ -11,7 +11,6 @@
 	<img src="{{ .img | absURL }}" alt="" class="img-responsive">
 	<h3>{{ .name }}</h3>
 	<h4>{{ .position }}</h4>
-	<p>{{ .description | markdownify }}</p>
 	<ul class="social">
 	  {{ if isset . "facebook" }}
 	  <li><a href="{{ .facebook }}"><i class="icon-facebook"></i></a></li>
