@@ -1594,7 +1594,14 @@ p {
 
 small,
 .small {
-  font-size: 85%;
+  font-size: 65%;
+  color: #ccc;
+  line-height: 1;
+}
+
+small a
+{
+  color: #0B1B23;
 }
 
 mark,
@@ -2436,6 +2443,7 @@ pre code {
 
   .col-md-6 {
     width: 50%;
+    line-height: 1.2;
   }
 
   .col-md-7 {

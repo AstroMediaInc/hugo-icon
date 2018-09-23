@@ -5,11 +5,15 @@
   {{ end }}
   <div class="container">
     <div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
+      
       <h2>{{ .title | markdownify }}</h2>
-      <p>{{ .description | markdownify }}</p>
 
-      <a href="https://www.sypher.la" target="_blank">
-        <img src="/images/sypherlogorounded.png" height="350rem"> </a>
+      <a href="https://www.sypher.app/" target="_blank">
+        <img class="logoImage"src="/images/sypherlogorounded.png" width="30rem"> </a>
+        <p style="margin-top:1rem;">{{ .description | markdownify }}</p>
+        <p style="margin-top:1rem;">{{ .description2 | markdownify }}</p>
+
+
 
     </div>
 

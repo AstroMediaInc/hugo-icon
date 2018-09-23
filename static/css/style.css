@@ -5,6 +5,14 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face{
+  font-family: 'space-age';
+  src: url("../fonts/space-age/spaceage.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 18px;
@@ -15,6 +23,12 @@ body {
 body.fh5co-overflow {
   overflow-x: hidden;
   width: 100%;
+}
+
+
+.logoImage
+{
+  width: 20rem;
 }
 
 a {
@@ -202,6 +216,7 @@ p {
   -moz-box-shadow: inset -1px -11px 21px -15px rgba(0, 0, 0, 0.75);
   box-shadow: inset -1px -11px 21px -15px rgba(0, 0, 0, 0.75);
   position: relative;
+  background-color: #000;
 }
 #fh5co-home > .container {
   position: relative;
@@ -212,9 +227,10 @@ p {
   width: 100%;
 }
 #fh5co-home .fh5co-copy-inner {
-  display: table-cell;
   width: 100%;
   vertical-align: middle;
+  padding-top: 7rem;
+  padding-left: 5rem;
 }
 #fh5co-home .fh5co-copy-inner h1, #fh5co-home .fh5co-copy-inner h2 {
   margin: 0;
@@ -222,16 +238,18 @@ p {
 }
 #fh5co-home .fh5co-copy-inner h1 {
   color: #fff;
-  font-size: 55px;
+  font-size: 7rem;
   margin-bottom: 20px;
   line-height: 1.2;
   font-weight: 300;
+  font-family: space-age;
 }
 #fh5co-home .fh5co-copy-inner h2 {
-  font-size: 20px;
+  font-size: 2.5rem;
   color: #fff;
   line-height: 1.2;
   color: rgba(255, 255, 255, 0.7);
+
 }
 #fh5co-home .fh5co-copy-inner a {
   color: #fff;
@@ -242,9 +260,26 @@ p {
   text-decoration: none;
 }
 
+@media screen and (max-width: 450px) 
+{
+  #fh5co-home .fh5co-copy-inner h1 {
+    font-size: 5rem;
+  }
+  #fh5co-home .fh5co-copy-inner h2 {
+    font-size: 2.5rem;
+  }
+  #fh5co-home .fh5co-copy-inner {
+
+    padding-top: 7rem;
+    padding-left: 3rem;
+  }
+  
+}
+
+
 .fh5co-main-nav {
   position: relative;
-  background: #fff;
+  background: #000;
 }
 .fh5co-main-nav.fh5co-shadow {
   -webkit-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.09);
@@ -260,7 +295,7 @@ p {
 .fh5co-main-nav .fh5co-menu-1 a {
   padding: 35px 0;
   margin-right: 30px;
-  color: #ccc;
+  color: #fff;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 13px;
@@ -276,7 +311,7 @@ p {
 }
 .fh5co-main-nav .fh5co-menu-1 a.active {
   font-weight: 400;
-  color: #000;
+  color: #d02541;
 }
 .fh5co-main-nav .fh5co-menu-1 {
   width: 100%;
@@ -335,6 +370,25 @@ p {
   }
 }
 
+/* #fh5co-about:before {
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  
+  display: block;
+  background-image: url("http://localhost:1313/images/background.jpg");
+  width: 120%;
+  height: 120%;
+  
+  -webkit-filter: blur(20px);
+  -moz-filter: blur(20px);
+  -o-filter: blur(20px);
+  -ms-filter: blur(20px);
+  filter: blur(20px);
+} */
+
 #fh5co-about {
   display: -webkit-box;
   display: -moz-box;
@@ -344,8 +398,8 @@ p {
   flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   -moz-flex-wrap: wrap;
-  background: #E8ECF1;
   width: 100%;
+  background-color: #0B1B23;
 }
 #fh5co-about .fh5co-2col {
   width: 50%;
@@ -356,7 +410,7 @@ p {
   }
 }
 #fh5co-about .fh5co-2col-inner {
-  padding: 5em 0;
+  padding: 0 0;
   width: 585px;
   margin-right: auto;
   margin-left: auto;
@@ -376,7 +430,7 @@ p {
 @media screen and (max-width: 768px) {
   #fh5co-about .fh5co-2col-inner {
     width: 100% !important;
-    padding: 2em 0 3em 0;
+    padding: 0 0 3em 0;
   }
 }
 #fh5co-about .fh5co-2col-inner.left {
@@ -453,7 +507,7 @@ p {
   text-align: center;
 }
 .fh5co-tabs-container .fh5co-tabs li a {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #fff;
   padding: 30px 0;
   float: left;
   width: 100%;
@@ -461,8 +515,8 @@ p {
   letter-spacing: 2px;
   font-size: 13px;
   text-transform: uppercase;
-  font-weight: 700;
-  color: #888;
+  font-weight: 400;
+  color: #fff;
 }
 .fh5co-tabs-container .fh5co-tabs li a:hover, .fh5co-tabs-container .fh5co-tabs li a:active, .fh5co-tabs-container .fh5co-tabs li a:focus {
   text-decoration: none;
@@ -484,11 +538,11 @@ p {
   transition: 0.5s;
 }
 .fh5co-tabs-container .fh5co-tab-content h2 {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 300;
   line-height: 1.8;
   margin-bottom: 30px;
-  color: #7b7b7b;
+  color: #fff;
 }
 .fh5co-tabs-container .fh5co-tab-content.active {
   display: block;
@@ -540,11 +594,12 @@ p {
 
 #fh5co-services {
   position: relative;
-  padding: 7em 0;
+  padding: 1em 0;
+  background-color: #fff;
 }
 @media screen and (max-width: 768px) {
   #fh5co-services {
-    padding: 5em 0 3em 0;
+    padding: 1em 0 3em 0;
   }
 }
 #fh5co-services .fh5co-video {
@@ -648,6 +703,11 @@ p {
   list-style: none;
   padding-left: 40px;
 }
+.goodList
+{
+  color: #fff;
+  font-size: 16px;
+}
 .checked li:before {
   position: absolute;
   left: 0;
@@ -666,16 +726,20 @@ p {
   -moz-osx-font-smoothing: grayscale;
   content: "\e116";
 }
-
+.projects
+{
+  background-color: #d02541;
+  width: 100%;
+}
 .fh5co-heading {
   margin-bottom: 30px;
 }
 .fh5co-heading h2 {
-  font-size: 14px;
+  font-size: 21px;
   letter-spacing: 2px;
-  font-weight: 700;
+  font-weight: 400;
   text-transform: uppercase;
-  color: #4d4d4d;
+  color: #0B1B23;
   padding-bottom: 20px;
   margin-bottom: 20px;
   position: relative;
@@ -688,16 +752,48 @@ p {
   bottom: 0;
   left: 50%;
   margin-left: -25px;
-  background: #cccccc;
+  background: #0B1B23;
 }
 .fh5co-heading p {
   font-size: 18px;
+  color: #0B1B23
+}
+
+
+
+
+.fh5co-heading-team {
+  margin-bottom: 30px;
+}
+.fh5co-heading-team h2 {
+  font-size: 21px;
+  letter-spacing: 2px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ccc;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.fh5co-heading-team h2:after {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  margin-left: -25px;
+  background: #ccc;
+}
+.fh5co-heading-team p {
+  font-size: 18px;
+  color: #ccc;
 }
 
 #fh5co-team {
   clear: both;
-  padding: 7em 0;
-  background: #E8ECF1;
+  padding: 1em 0;
+  background: #0B1B23;
 }
 @media screen and (max-width: 768px) {
   #fh5co-team {
@@ -705,7 +801,7 @@ p {
   }
 }
 #fh5co-team .person {
-  padding: 30px;
+  padding: 30px 10px 30px 10px;
   margin-bottom: 30px;
   text-align: center;
   -webkit-transition: 0.5s;
@@ -898,15 +994,15 @@ p {
 }
 
 #fh5co-footer {
-  padding: 3em 0;
-  background: #E8ECF1;
+  padding: 0 0;
+  background: #d02541;
   -webkit-box-shadow: inset 0px 10px 21px -15px rgba(0, 0, 0, 0.12);
   -moz-box-shadow: inset 0px 10px 21px -15px rgba(0, 0, 0, 0.12);
   box-shadow: inset 0px 10px 21px -15px rgba(0, 0, 0, 0.12);
 }
 @media screen and (max-width: 768px) {
   #fh5co-footer {
-    padding: 3em 0;
+    padding: 0 0;
   }
 }
 #fh5co-footer p:last-child {
