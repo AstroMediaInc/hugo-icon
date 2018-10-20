@@ -13,8 +13,34 @@
   font-style: normal;
 }
 
+@font-face{
+  font-family: 'nasalization';
+  src: url("../fonts/nasalization/nasalization.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'sanfran';
+  src: url("../fonts/sanfrancisco/SF-Pro-Text-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face{
+  font-family: 'circular';
+  src: url("../fonts/circular/circular-book.otf");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face{
+  font-family: 'circular';
+  src: url("../fonts/circular/circular-bold.otf");
+  font-weight: 700;
+  font-style: bold;
+}
+
 body {
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "circular", Arial, sans-serif;
   font-size: 18px;
   font-weight: 300;
   line-height: 1.8;
@@ -25,10 +51,64 @@ body.fh5co-overflow {
   width: 100%;
 }
 
+.buttonContainer
+{
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 3rem;
+}
+
+.button1
+{
+  background-color: #ccc;
+  border-radius: 15px 15px 15px 15px;
+  -moz-border-radius: 15px 15px 15px 15px;
+  -webkit-border-radius: 15px 15px 15px 15px;
+  border: 9px none #000000;
+  height:3rem;
+  width: 40%;
+}
+.projectIcon
+{
+  width: 50%;
+  border-radius: 15px 15px 15px 15px;
+  -moz-border-radius: 15px 15px 15px 15px;
+  -webkit-border-radius: 15px 15px 15px 15px;
+  border: 9px none #000000;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 3rem;
+}
+
+@media screen and (max-width: 480px) 
+{
+
+
+.projectIcon
+{
+  width: 80%;
+  border-radius: 15px 15px 15px 15px;
+  -moz-border-radius: 15px 15px 15px 15px;
+  -webkit-border-radius: 15px 15px 15px 15px;
+  border: 9px none #000000;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+}
+}
+
+
+
 
 .logoImage
 {
   width: 20rem;
+  border-radius: 15px 15px 15px 15px;
+  -moz-border-radius: 15px 15px 15px 15px;
+  -webkit-border-radius: 15px 15px 15px 15px;
+  border: 9px none #000000;
 }
 
 a {
@@ -42,7 +122,7 @@ a:hover, a:focus, a:active {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "circular", Arial, sans-serif;
   color: #000;
   margin-bottom: 30px;
 }
@@ -238,17 +318,19 @@ p {
 }
 #fh5co-home .fh5co-copy-inner h1 {
   color: #fff;
-  font-size: 7rem;
+  font-size: 8rem;
   margin-bottom: 20px;
   line-height: 1.2;
   font-weight: 300;
-  font-family: space-age;
+  font-family: nasalization;
 }
 #fh5co-home .fh5co-copy-inner h2 {
   font-size: 2.5rem;
   color: #fff;
   line-height: 1.2;
   color: rgba(255, 255, 255, 0.7);
+  font-family: nasalization;
+
 
 }
 #fh5co-home .fh5co-copy-inner a {
@@ -270,11 +352,14 @@ p {
   }
   #fh5co-home .fh5co-copy-inner {
 
-    padding-top: 7rem;
+    padding-top: 3rem;
     padding-left: 3rem;
+    padding-right: 3rem;
+
+}
   }
   
-}
+
 
 
 .fh5co-main-nav {
@@ -296,10 +381,9 @@ p {
   padding: 35px 0;
   margin-right: 30px;
   color: #fff;
-  text-transform: uppercase;
   letter-spacing: 2px;
-  font-size: 13px;
-  font-weight: 400;
+  font-size: 17px;
+  font-weight: 700;
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
@@ -310,7 +394,7 @@ p {
   text-decoration: none;
 }
 .fh5co-main-nav .fh5co-menu-1 a.active {
-  font-weight: 400;
+  font-weight: 700;
   color: #d02541;
 }
 .fh5co-main-nav .fh5co-menu-1 {
@@ -400,6 +484,7 @@ p {
   -moz-flex-wrap: wrap;
   width: 100%;
   background-color: #0B1B23;
+  padding-top: 2rem;
 }
 #fh5co-about .fh5co-2col {
   width: 50%;
@@ -461,9 +546,7 @@ p {
 .fh5co-grid .fh5co-grid-item {
   width: 50%;
   float: left;
-  background-size: cover;
   background-position: center center;
-  background-repeat: no-repeat;
 }
 @media screen and (max-width: 768px) {
   .fh5co-grid .fh5co-grid-item {
@@ -514,8 +597,7 @@ p {
   display: block;
   letter-spacing: 2px;
   font-size: 13px;
-  text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 700;
   color: #fff;
 }
 .fh5co-tabs-container .fh5co-tabs li a:hover, .fh5co-tabs-container .fh5co-tabs li a:active, .fh5co-tabs-container .fh5co-tabs li a:focus {
@@ -713,7 +795,7 @@ p {
   left: 0;
   top: .15em;
   font-size: 23px;
-  color: #57D131;
+  color: #d02541;
   font-family: 'icomoon';
   speak: none;
   font-style: normal;
@@ -768,8 +850,7 @@ p {
 .fh5co-heading-team h2 {
   font-size: 21px;
   letter-spacing: 2px;
-  font-weight: 400;
-  text-transform: uppercase;
+  font-weight: 700;
   color: #ccc;
   padding-bottom: 20px;
   margin-bottom: 20px;
@@ -1246,7 +1327,7 @@ p {
 }
 @media screen and (max-width: 768px) {
   .fh5co-nav-toggle {
-    display: block;
+    display: none;
   }
 }
 

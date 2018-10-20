@@ -83,6 +83,8 @@ mark {
 
 small {
   font-size: 80%;
+  text-align: center;
+
 }
 
 sub,
@@ -1493,7 +1495,7 @@ hr {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: inherit;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1.1;
   color: inherit;
 }
@@ -1594,9 +1596,12 @@ p {
 
 small,
 .small {
-  font-size: 65%;
+  font-size: 85%;
   color: #ccc;
   line-height: 1;
+  text-align: center;
+  padding-left: 2rem;
+
 }
 
 small a
